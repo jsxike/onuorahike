@@ -1,0 +1,22 @@
+// COLOURS
+$color-black: #000;
+$color-white: #fff;
+
+// FONT VARIABLES
+
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+//BOX SHADOW
+$shadow: 0 1rem 3rem rgba($color-black, 0.1);
+$shadow2: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+//FONT SIZE
+$default-font-size: 1.6rem;
+
+//RESPONSIVE BREAKPOINT
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 25em; // 400px
