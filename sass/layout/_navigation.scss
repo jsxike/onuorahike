@@ -3,13 +3,14 @@
   top: -30%;
   left: 50%;
   transform: translateX(-50%);
-  box-shadow: $shadow2;
+  //   box-shadow: $shadow2;
+  border: 1px solid $color-green;
   height: 25rem;
   width: 20rem;
   border-radius: 4rem;
   transition: all 0.3s ease-in;
   &.clicked {
-    top: -5%;
+    top: -7%;
   }
 }
 
@@ -17,7 +18,7 @@
   transform: scaleY(0);
   @include absCentre;
   &_icon {
-    font-size: 3rem;
+    font-size: 5rem;
     position: absolute;
     bottom: 0;
     left: 50%;
