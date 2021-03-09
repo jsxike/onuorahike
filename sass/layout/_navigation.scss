@@ -1,0 +1,57 @@
+.navigation {
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: $shadow2;
+  height: 25rem;
+  width: 20rem;
+  border-radius: 4rem;
+  transition: all 0.3s ease-in;
+  &.clicked {
+    top: -5%;
+  }
+}
+
+.nav {
+  transform: scaleY(0);
+  @include absCentre;
+  &_icon {
+    font-size: 3rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-bottom: 2rem;
+    transform: translateX(-50%);
+    animation: pulsate 0.6s ease infinite;
+    transition: all 0.2s ease-in-out;
+    &:active,
+    &:hover {
+      color: $color-green;
+    }
+    &.clicked {
+      transform: translateX(-50%) rotate(180deg);
+    }
+  }
+  &_list {
+    list-style: none;
+  }
+
+  &_link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      color: $color-white;
+      text-transform: capitalize;
+      font-size: 2rem;
+      font-weight: 300;
+      text-decoration: none;
+      //   margin-top: 1rem;
+    }
+
+    &:active,
+    &:hover {
+      color: $color-green;
+    }
+  }
+}

@@ -1,6 +1,14 @@
 // COLOURS
-$color-black: #000;
+$color-primary: #2d2e32;
+$color-primary-dark: #25262a;
+
+$color-secondary: #1f213a;
+$color-secondary-dark: #13172a;
+
 $color-white: #fff;
+$color-black: #000;
+$color-grey: #b4b3b4;
+$color-green: #6ff6a7;
 
 // FONT VARIABLES
 
@@ -9,7 +17,7 @@ $font-display: 'Josefin Sans', sans-serif;
 
 //BOX SHADOW
 $shadow: 0 1rem 3rem rgba($color-black, 0.1);
-$shadow2: 0 1.5rem 4rem rgba($color-black, 0.15);
+$shadow2: 0 1rem 5rem rgba($color-black, 0.15);
 
 //FONT SIZE
 $default-font-size: 1.6rem;
@@ -20,3 +28,7 @@ $bp-large: 62.5em; //1000px
 $bp-medium: 50em; // 800px
 $bp-small: 37.5em; // 600px
 $bp-smallest: 25em; // 400px
+
+/// SHADOWS
+$shadow: 0 1rem 3rem rgba($color-black, 0.1);
+$shadow2: 0 1.5rem 4rem rgba($color-black, 0.15);
