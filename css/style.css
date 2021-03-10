@@ -261,7 +261,7 @@ h3 {
       animation: line-animation 3s ease forwards 5.4s; }
 
 .navigation {
-  position: absolute;
+  position: fixed;
   top: -30%;
   left: 50%;
   transform: translateX(-50%);

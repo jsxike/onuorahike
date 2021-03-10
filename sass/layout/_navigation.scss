@@ -1,5 +1,5 @@
 .navigation {
-  position: absolute;
+  position: fixed;
   top: -30%;
   left: 50%;
   transform: translateX(-50%);
@@ -23,7 +23,6 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    // margin-top: 1rem;
     margin-bottom: 1rem;
     transform: translateX(-50%);
     animation: pulsate 0.6s ease infinite;
