@@ -6,7 +6,7 @@
     font-size: 3.5rem;
     color: $color-red;
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
     animation: scroll 2s linear infinite;
@@ -34,6 +34,10 @@
     top: 77%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media only screen and (max-width: 480px) {
+      width: 12rem;
+      height: 12rem;
+    }
   }
   &_img {
     height: 100%;

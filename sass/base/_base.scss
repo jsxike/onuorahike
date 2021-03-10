@@ -23,25 +23,6 @@ body {
   line-height: 1.6;
 }
 
-a,
-p {
-  font-family: 'Akaya Telivigala', cursive;
-}
-
-h1 {
-  font-size: 6rem;
-  font-family: mistral;
-}
-
-h2 {
-  font-size: 3rem;
-  font-family: corbel;
-  font-weight: normal;
-}
-h3 {
-  font-family: corbel;
-}
-
 ::selection {
   background-color: $color-green;
   color: $color-white;
