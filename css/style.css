@@ -1,3 +1,57 @@
+@keyframes line-animation {
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes dot-fall {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -400px); }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%); } }
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px); }
+  70% {
+    opacity: 1;
+    transform: translateY(100px) skewY(15deg); }
+  90% {
+    opacity: 1;
+    transform: translateY(-40px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -10px); }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 0); } }
+
 *,
 *::before,
 *::after {
@@ -14,26 +68,25 @@ html {
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #2d2e32;
+  background-color: #313131;
   color: #fff;
   font-weight: 300;
   line-height: 1.6; }
 
+a,
+p {
+  font-family: 'Akaya Telivigala', cursive; }
+
 h1 {
-  color: #66bfbf;
-  font-size: 5.625rem;
-  font-family: mistral;
-  margin: 50px auto 0px auto; }
+  font-size: 6rem;
+  font-family: mistral; }
 
 h2 {
-  color: #66bfbf;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: corbel;
-  font-weight: normal;
-  padding-bottom: 10px; }
+  font-weight: normal; }
 
 h3 {
-  color: #11999e;
   font-family: corbel; }
 
 ::selection {
@@ -64,31 +117,172 @@ h3 {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.header {
+  position: relative;
+  height: 100vh; }
+  .header_scroll {
+    font-size: 3.5rem;
+    color: #ca3e47;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: scroll 2s linear infinite; }
+  .header_text-box {
+    position: absolute;
+    width: 60rem;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 550px) {
+      .header_text-box {
+        text-align: center; } }
+    @media only screen and (max-width: 480px) {
+      .header_text-box {
+        width: 30rem; } }
+  .header_img-box {
+    position: absolute;
+    background-color: #414141;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    z-index: -3;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .header_img {
+    height: 100%;
+    width: 100%; }
+  .header_hi {
+    z-index: -2;
+    color: #ca3e47;
+    animation: bounce-in 3s ease-in-out; }
+  .header_name {
+    color: #fff;
+    display: inline-block;
+    animation: moveInRight 3s ease-in; }
+    @media only screen and (max-width: 550px) {
+      .header_name {
+        font-size: 5rem; } }
+    @media only screen and (max-width: 500px) {
+      .header_name {
+        font-size: 4rem; } }
+  .header_logo {
+    position: absolute;
+    width: 60rem;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    @media only screen and (max-width: 550px) {
+      .header_logo {
+        width: 50rem; } }
+    @media only screen and (max-width: 500px) {
+      .header_logo {
+        width: 40rem; } }
+    .header_logo path:nth-child(1) {
+      stroke-dasharray: 525.0670776367188;
+      stroke-dashoffset: 525.0670776367188;
+      animation: line-animation 3s ease forwards; }
+    .header_logo path:nth-child(2) {
+      stroke-dasharray: 391.79766845703125;
+      stroke-dashoffset: 391.79766845703125;
+      animation: line-animation 3s ease forwards 0.3s; }
+    .header_logo path:nth-child(3) {
+      stroke-dasharray: 263.3357849121094;
+      stroke-dashoffset: 263.3357849121094;
+      animation: line-animation 3s ease forwards 0.6s; }
+    .header_logo path:nth-child(4) {
+      stroke-dasharray: 435.10626220703125;
+      stroke-dashoffset: 435.10626220703125;
+      animation: line-animation 3s ease forwards 0.9s; }
+    .header_logo path:nth-child(5) {
+      stroke-dasharray: 364.4256286621094;
+      stroke-dashoffset: 364.4256286621094;
+      animation: line-animation 3s ease forwards 1.2s; }
+    .header_logo path:nth-child(6) {
+      stroke-dasharray: 305.3294372558594;
+      stroke-dashoffset: 305.3294372558594;
+      animation: line-animation 3s ease forwards 1.5s; }
+    .header_logo path:nth-child(7) {
+      stroke-dasharray: 97.60227966308594;
+      stroke-dashoffset: 97.60227966308594;
+      animation: line-animation 3s ease forwards 1.8s; }
+    .header_logo path:nth-child(8) {
+      stroke-dasharray: 397.30865478515625;
+      stroke-dashoffset: 397.30865478515625;
+      animation: line-animation 3s ease forwards 2.1s; }
+    .header_logo path:nth-child(9) {
+      stroke-dasharray: 364.4228820800781;
+      stroke-dashoffset: 364.4228820800781;
+      animation: line-animation 3s ease forwards 2.4s; }
+    .header_logo path:nth-child(10) {
+      stroke-dasharray: 514.4210205078125;
+      stroke-dashoffset: 514.4210205078125;
+      animation: line-animation 3s ease forwards 2.7s; }
+    .header_logo path:nth-child(11) {
+      stroke-dasharray: 625.0112915039062;
+      stroke-dashoffset: 625.0112915039062;
+      animation: line-animation 3s ease forwards 3s; }
+    .header_logo path:nth-child(12) {
+      stroke-dasharray: 397.3167419433594;
+      stroke-dashoffset: 397.3167419433594;
+      animation: line-animation 3s ease forwards 3.3s; }
+    .header_logo path:nth-child(13) {
+      stroke-dasharray: 322.6158752441406;
+      stroke-dashoffset: 322.6158752441406;
+      animation: line-animation 3s ease forwards 3.6s; }
+    .header_logo path:nth-child(14) {
+      stroke-dasharray: 397.31494140625;
+      stroke-dashoffset: 397.31494140625;
+      animation: line-animation 3s ease forwards 3.9s; }
+    .header_logo path:nth-child(15) {
+      stroke-dasharray: 498.72625732421875;
+      stroke-dashoffset: 498.72625732421875;
+      animation: line-animation 3s ease forwards 4.2s; }
+    .header_logo path:nth-child(16) {
+      stroke-dasharray: 435.10302734375;
+      stroke-dashoffset: 435.10302734375;
+      animation: line-animation 3s ease forwards 4.5s; }
+    .header_logo path:nth-child(17) {
+      stroke-dasharray: 480.82257080078125;
+      stroke-dashoffset: 480.82257080078125;
+      animation: line-animation 3s ease forwards 4.8s; }
+    .header_logo path:nth-child(18) {
+      stroke-dasharray: 397.3145751953125;
+      stroke-dashoffset: 397.3145751953125;
+      animation: line-animation 3s ease forwards 5.1s; }
+    .header_logo path:nth-child(19) {
+      stroke-dasharray: 263.3335266113281;
+      stroke-dashoffset: 263.3335266113281;
+      animation: line-animation 3s ease forwards 5.4s; }
+
 .navigation {
   position: absolute;
   top: -30%;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 2;
   border: 1px solid #6ff6a7;
   height: 25rem;
-  width: 20rem;
+  width: 15rem;
   border-radius: 4rem;
-  transition: all 0.3s ease-in; }
+  transition: all 0.3s ease-in;
+  background-color: #414141; }
   .navigation.clicked {
-    top: -7%; }
+    top: -10%; }
 
 .nav {
-  transform: scaleY(0);
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
   .nav_icon {
-    font-size: 5rem;
+    font-size: 3.5rem;
     position: absolute;
     bottom: 0;
     left: 50%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     transform: translateX(-50%);
     animation: pulsate 0.6s ease infinite;
     transition: all 0.2s ease-in-out; }
@@ -97,13 +291,14 @@ h3 {
     .nav_icon.clicked {
       transform: translateX(-50%) rotate(180deg); }
   .nav_list {
+    margin-top: 2rem;
     list-style: none; }
   .nav_link:link, .nav_link:visited {
     display: inline-block;
     color: #fff;
     text-transform: capitalize;
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 400;
     text-decoration: none; }
   .nav_link:active, .nav_link:hover {
     color: #6ff6a7; }
