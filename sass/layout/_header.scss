@@ -2,15 +2,6 @@
   position: relative;
   height: 100vh;
 
-  &_scroll {
-    font-size: 3.5rem;
-    color: $color-red;
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: scroll 2s linear infinite;
-  }
   &_text-box {
     position: absolute;
     width: 60rem;
@@ -24,30 +15,15 @@
       width: 30rem;
     }
   }
-  &_img-box {
-    position: absolute;
-    background-color: $color-primary;
-    border-radius: 50%;
-    width: 15rem;
-    height: 15rem;
-    z-index: -3;
-    top: 77%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    @media only screen and (max-width: 480px) {
-      width: 12rem;
-      height: 12rem;
-    }
-  }
-  &_img {
-    height: 100%;
-    width: 100%;
-  }
 
   &_hi {
+    margin-top: 3rem;
     z-index: -2;
-    color: $color-red;
+    color: $color-green;
     animation: bounce-in 3s ease-in-out;
+    @media only screen and (max-width: 500px) {
+      font-size: 4rem;
+    }
   }
   &_name {
     color: $color-white;
@@ -60,149 +36,147 @@
       font-size: 4rem;
     }
   }
-  // &_dot {
-  //   border-radius: 50%;
-  //   background-color: $color-green;
-  //   z-index: 100;
-  //   position: absolute;
-  //   height: 1rem;
-  //   width: 1rem;
-  //   top: 62%;
-  //   right: 20%;
-  //   transform: translate(-50%, -50%);
-  //   opacity: 0;
-  //   animation: dot-fall 0.4s cubic-bezier(0.18, 1.11, 1, 1) forwards 8s;
-  // }
+
   &_logo {
-    position: absolute;
-    width: 60rem;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 50rem;
+    z-index: 300;
     @media only screen and (max-width: 550px) {
-      width: 50rem;
-    }
-    @media only screen and (max-width: 500px) {
       width: 40rem;
     }
-    // @media only screen and (max-width: 1055px) {
-    //   width: 58rem;
-    // }
-    // @media only screen and (max-width: $bp-large) {
-    //   width: 50rem;
-    // }
-    // @media only screen and (max-width: 900px) {
-    //   width: 45rem;
-    // }
-    // @media only screen and (max-width: 800px) {
-    //   left: 48%;
-    // }
-    // @media only screen and (max-width: 750px) {
-    //   left: 45%;
-    // }
-    // @media only screen and (max-width: 650px) {
-    //   left: 40%;
-    // }
-    // @media only screen and (max-width: 550px) {
-    //   width: 40rem;
-    // }
+    @media only screen and (max-width: 500px) {
+      width: 30rem;
+    }
 
     & path:nth-child(1) {
-      stroke-dasharray: 525.0670776367188;
-      stroke-dashoffset: 525.0670776367188;
-      animation: line-animation 3s ease forwards;
+      stroke-dasharray: 178.55455017089844;
+      stroke-dashoffset: 178.55455017089844;
+      animation: line-animation 1s ease forwards, fill-animation 0.3s ease forwards 5.8s;
     }
     & path:nth-child(2) {
-      stroke-dasharray: 391.79766845703125;
-      stroke-dashoffset: 391.79766845703125;
-      animation: line-animation 3s ease forwards 0.3s;
+      stroke-dasharray: 137.06686401367188;
+      stroke-dashoffset: 137.06686401367188;
+      animation: line-animation 1s ease forwards 0.3s, fill-animation 0.3s ease forwards 5.8s;
     }
     & path:nth-child(3) {
-      stroke-dasharray: 263.3357849121094;
-      stroke-dashoffset: 263.3357849121094;
-      animation: line-animation 3s ease forwards 0.6s;
+      stroke-dasharray: 102.53118896484375;
+      stroke-dashoffset: 102.53118896484375;
+      animation: line-animation 1s ease forwards 0.6s, fill-animation 0.3s ease forwards 5.8s;
     }
 
     & path:nth-child(4) {
-      stroke-dasharray: 435.10626220703125;
-      stroke-dashoffset: 435.10626220703125;
-      animation: line-animation 3s ease forwards 0.9s;
+      stroke-dasharray: 148.0983428955078;
+      stroke-dashoffset: 148.0983428955078;
+      animation: line-animation 1s ease forwards 0.6s, fill-animation 0.3s ease forwards 5.8s;
     }
     & path:nth-child(5) {
-      stroke-dasharray: 364.4256286621094;
-      stroke-dashoffset: 364.4256286621094;
-      animation: line-animation 3s ease forwards 1.2s;
+      stroke-dasharray: 164.34896850585938;
+      stroke-dashoffset: 164.34896850585938;
+      animation: line-animation 1s ease forwards 1.2s, fill-animation 0.3s ease forwards 5.8s;
     }
     & path:nth-child(6) {
-      stroke-dasharray: 305.3294372558594;
-      stroke-dashoffset: 305.3294372558594;
-      animation: line-animation 3s ease forwards 1.5s;
+      stroke-dasharray: 137.60568237304688;
+      stroke-dashoffset: 137.60568237304688;
+      animation: line-animation 1s ease forwards 1.5s, fill-animation 0.3s ease forwards 5.8s;
     }
 
     & path:nth-child(7) {
-      stroke-dasharray: 97.60227966308594;
-      stroke-dashoffset: 97.60227966308594;
-      animation: line-animation 3s ease forwards 1.8s;
+      stroke-dasharray: 50.78001403808594;
+      stroke-dashoffset: 50.78001403808594;
+      animation: line-animation 1s ease forwards 1.8s, fill-animation 0.3s ease forwards 5.8s;
     }
     & path:nth-child(8) {
-      stroke-dasharray: 397.30865478515625;
-      stroke-dashoffset: 397.30865478515625;
-      animation: line-animation 3s ease forwards 2.1s;
+      stroke-dasharray: 177.83505249023438;
+      stroke-dashoffset: 177.83505249023438;
+      animation: line-animation 1s ease forwards 2.1s, fill-animation 0.3s ease forwards 5.8s;
     }
     & path:nth-child(9) {
-      stroke-dasharray: 364.4228820800781;
-      stroke-dashoffset: 364.4228820800781;
-      animation: line-animation 3s ease forwards 2.4s;
+      stroke-dasharray: 164.34902954101562;
+      stroke-dashoffset: 164.34902954101562;
+      animation: line-animation 1s ease forwards 2.4s, fill-animation 0.3s ease forwards 5.8s;
     }
     & path:nth-child(10) {
-      stroke-dasharray: 514.4210205078125;
-      stroke-dashoffset: 514.4210205078125;
-      animation: line-animation 3s ease forwards 2.7s;
+      stroke-dasharray: 205.5269317626953;
+      stroke-dashoffset: 205.5269317626953;
+      animation: line-animation 1s ease forwards 2.7s, fill-animation 0.3s ease forwards 5.8s;
     }
     & path:nth-child(11) {
-      stroke-dasharray: 625.0112915039062;
-      stroke-dashoffset: 625.0112915039062;
-      animation: line-animation 3s ease forwards 3s;
+      stroke-dasharray: 205.52691650390625;
+      stroke-dashoffset: 205.52691650390625;
+      animation: line-animation 1s ease forwards 3s, fill-animation 0.3s ease forwards 5.8s;
     }
     & path:nth-child(12) {
-      stroke-dasharray: 397.3167419433594;
-      stroke-dashoffset: 397.3167419433594;
-      animation: line-animation 3s ease forwards 3.3s;
+      stroke-dasharray: 177.83518981933594;
+      stroke-dashoffset: 177.83518981933594;
+      animation: line-animation 1s ease forwards 3.3s, fill-animation 0.3s ease forwards 5.8s;
     }
     & path:nth-child(13) {
-      stroke-dasharray: 322.6158752441406;
-      stroke-dashoffset: 322.6158752441406;
-      animation: line-animation 3s ease forwards 3.6s;
+      stroke-dasharray: 124.9933853149414;
+      stroke-dashoffset: 124.9933853149414;
+      animation: line-animation 1s ease forwards 3.6s, fill-animation 0.3s ease forwards 5.8s;
     }
     & path:nth-child(14) {
-      stroke-dasharray: 397.31494140625;
-      stroke-dashoffset: 397.31494140625;
-      animation: line-animation 3s ease forwards 3.9s;
+      stroke-dasharray: 177.8354949951172;
+      stroke-dashoffset: 177.8354949951172;
+      animation: line-animation 1s ease forwards 3.9s, fill-animation 0.3s ease forwards 5.8s;
     }
     & path:nth-child(15) {
-      stroke-dasharray: 498.72625732421875;
-      stroke-dashoffset: 498.72625732421875;
-      animation: line-animation 3s ease forwards 4.2s;
+      stroke-dasharray: 122.2800521850586;
+      stroke-dashoffset: 122.2800521850586;
+      animation: line-animation 1s ease forwards 4.2s, fill-animation 0.3s ease forwards 5.8s;
     }
     & path:nth-child(16) {
-      stroke-dasharray: 435.10302734375;
-      stroke-dashoffset: 435.10302734375;
-      animation: line-animation 3s ease forwards 4.5s;
+      stroke-dasharray: 148.09921264648438;
+      stroke-dashoffset: 148.09921264648438;
+      animation: line-animation 1s ease forwards 4.5s, fill-animation 0.3s ease forwards 5.8s;
     }
     & path:nth-child(17) {
-      stroke-dasharray: 480.82257080078125;
-      stroke-dashoffset: 480.82257080078125;
-      animation: line-animation 3s ease forwards 4.8s;
+      stroke-dasharray: 205.7028045654297;
+      stroke-dashoffset: 205.7028045654297;
+      animation: line-animation 1s ease forwards 4.8s, fill-animation 0.3s ease forwards 5.8s;
     }
     & path:nth-child(18) {
-      stroke-dasharray: 397.3145751953125;
-      stroke-dashoffset: 397.3145751953125;
-      animation: line-animation 3s ease forwards 5.1s;
+      stroke-dasharray: 177.83555603027344;
+      stroke-dashoffset: 177.83555603027344;
+      animation: line-animation 1s ease forwards 5.1s, fill-animation 0.3s ease forwards 5.8s;
     }
     & path:nth-child(19) {
-      stroke-dasharray: 263.3335266113281;
-      stroke-dashoffset: 263.3335266113281;
-      animation: line-animation 3s ease forwards 5.4s;
+      stroke-dasharray: 102.5514907836914;
+      stroke-dashoffset: 102.5514907836914;
+      animation: line-animation 1s ease forwards 5.4s, fill-animation 0.3s ease forwards 5.8s;
     }
+    & path:nth-child(20) {
+      fill: $color-red;
+      transform: translateY(-1000px);
+      animation: dot-fall 0.5s ease forwards 6s;
+    }
+  }
+
+  &_img-box {
+    position: absolute;
+    background-color: $color-primary;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    z-index: -3;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media only screen and (max-width: 480px) {
+      width: 12rem;
+      height: 12rem;
+    }
+  }
+  &_img {
+    height: 100%;
+    width: 100%;
+  }
+  &_scroll {
+    font-size: 3.5rem;
+    color: $color-red;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: scroll 2s linear infinite;
   }
 }

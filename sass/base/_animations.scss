@@ -4,15 +4,19 @@
   }
 }
 
-@keyframes dot-fall {
-  0% {
-    opacity: 1;
-    transform: translate(-50%, -400px);
+@keyframes fill-animation {
+  from {
+    fill: transparent;
   }
+  to {
+    fill: $color-red;
+  }
+}
 
-  100% {
+@keyframes dot-fall {
+  to {
     opacity: 1;
-    transform: translate(-50%, -50%);
+    transform: translateY(0);
   }
 }
 
