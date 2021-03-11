@@ -1,43 +1,51 @@
 .navigation {
   position: fixed;
-  top: -30%;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 2;
-  // border: 1px solid $color-green;
-  height: 25rem;
-  width: 15rem;
-  border-radius: 4rem;
+  z-index: 200;
+  height: 5rem;
+  width: 20rem;
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
   transition: all 0.3s linear;
-  background-color: $color-primary;
+  background-color: rgba($color: #16161a, $alpha: 0.5);
   &.clicked {
-    top: -10%;
+    height: 18rem;
   }
 }
 
 .nav {
+  opacity: 0;
   text-align: center;
+  margin-top: -2rem;
+  visibility: hidden;
   @include absCentre;
+  transition: all 0.2s ease-in;
+
+  &.clicked {
+    opacity: 1;
+    visibility: visible;
+  }
+
   &_icon {
     font-size: 3.5rem;
     position: absolute;
     bottom: 0;
     left: 50%;
     margin-bottom: 1rem;
-    transform: translateX(-50%);
+    transform: translateX(-50%) rotate(0);
     animation: pulsate 0.6s ease infinite;
     transition: all 0.2s ease-in-out;
-
     &:active,
     &:hover {
       color: $color-green;
     }
     &.clicked {
-      transform: translateX(-50%) rotate(180deg);
+      transform: translateX(-50%) rotate(45deg);
     }
   }
   &_list {
-    margin-top: 2rem;
     list-style: none;
   }
 
@@ -50,9 +58,7 @@
       font-size: 2rem;
       font-weight: 400;
       text-decoration: none;
-      //   margin-top: 1rem;
     }
-
     &:active,
     &:hover {
       color: $color-green;

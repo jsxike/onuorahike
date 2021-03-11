@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $('.nav_icon').on('click', function () {
-    const navigation = $('.navigation');
-    $(navigation).toggleClass('clicked');
+    $('.navigation').toggleClass('clicked');
+    $('.nav').toggleClass('clicked');
     $(this).toggleClass('clicked');
   });
 
@@ -13,7 +13,7 @@ $(document).ready(function () {
   ////PARTICLEJS
 
   // header particle
-  particlesJS('header-particles', {
+  particlesJS('body-particles', {
     particles: {
       number: {
         value: 50,

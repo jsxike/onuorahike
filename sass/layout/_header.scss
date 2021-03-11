@@ -1,42 +1,60 @@
-#header-particles {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  background-image: url('');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
 .header {
   position: relative;
   height: 100vh;
 
+  &_img-box {
+    background-color: $color-primary-light;
+    position: absolute;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    z-index: -3;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media only screen and (max-width: 480px) {
+      width: 12rem;
+      height: 12rem;
+    }
+  }
+  &_img {
+    height: 100%;
+    width: 100%;
+  }
+
   &_text-box {
+    z-index: 1000000;
     position: absolute;
     width: 60rem;
-    top: 40%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     @media only screen and (max-width: 550px) {
       text-align: center;
     }
     @media only screen and (max-width: 480px) {
-      width: 30rem;
+      width: 40rem;
     }
   }
 
   &_hi {
+    font-size: 3.5rem;
     margin-top: 3rem;
     z-index: -2;
-    color: $color-green;
+    color: $color-grey;
     animation: bounce-in 3s ease-in-out;
     @media only screen and (max-width: 500px) {
       font-size: 4rem;
     }
+    // @media only screen and (max-width: 480px) {
+    //   font-size: 2.5rem;
+    // }
+  }
+  &_im {
+    color: $color-grey;
   }
   &_name {
+    font-size: 4rem;
     color: $color-white;
     display: inline-block;
     animation: moveInRight 3s ease-in;
@@ -47,21 +65,32 @@
       font-size: 4rem;
     }
   }
+  &_paragraph {
+    font-size: 2rem;
+    color: $color-grey;
+    @media only screen and (max-width: 480px) {
+      margin: 3rem 0;
+    }
+  }
 
   &_logo {
-    width: 50rem;
-    z-index: 300;
-    @media only screen and (max-width: 550px) {
-      width: 40rem;
-    }
-    @media only screen and (max-width: 500px) {
-      width: 30rem;
-    }
+    transform: translateY(5px);
+    width: 20rem;
+    // @media only screen and (max-width: 550px) {
+    //   width: 20rem;
+    // }
+    // @media only screen and (max-width: 500px) {
+    //   width: 10rem;
+    // }
 
     & path:nth-child(1) {
-      stroke-dasharray: 178.55455017089844;
-      stroke-dashoffset: 178.55455017089844;
-      animation: line-animation 1s ease forwards, fill-animation 0.3s ease forwards 5.8s;
+      fill: $color-green;
+      transform: translateY(-1000px);
+      animation: dot-fall 0.5s ease forwards 6s;
+
+      // stroke-dasharray: 178.55455017089844;
+      // stroke-dashoffset: 178.55455017089844;
+      // animation: line-animation 1s ease forwards, fill-animation 0.3s ease forwards 5.8s;
     }
     & path:nth-child(2) {
       stroke-dasharray: 137.06686401367188;
@@ -155,35 +184,16 @@
       stroke-dashoffset: 102.5514907836914;
       animation: line-animation 1s ease forwards 5.4s, fill-animation 0.3s ease forwards 5.8s;
     }
-    & path:nth-child(20) {
-      fill: $color-red;
-      transform: translateY(-1000px);
-      animation: dot-fall 0.5s ease forwards 6s;
-    }
+    // & path:nth-child(20) {
+    //   fill: $color-green;
+    //   transform: translateY(-1000px);
+    //   animation: dot-fall 0.5s ease forwards 6s;
+    // }
   }
 
-  &_img-box {
-    position: absolute;
-    background-color: $color-primary;
-    border-radius: 50%;
-    width: 12rem;
-    height: 12rem;
-    z-index: -3;
-    top: 73%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    @media only screen and (max-width: 480px) {
-      width: 12rem;
-      height: 12rem;
-    }
-  }
-  &_img {
-    height: 100%;
-    width: 100%;
-  }
   &_scroll {
-    font-size: 3.5rem;
-    color: $color-red;
+    font-size: 2rem;
+    color: $color-grey;
     position: absolute;
     bottom: 60px;
     left: 50%;
