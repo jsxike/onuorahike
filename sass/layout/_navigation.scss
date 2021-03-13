@@ -1,9 +1,9 @@
 .navigation {
+  z-index: 2000;
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 200;
   height: 5rem;
   width: 20rem;
   border-bottom-left-radius: 2.5rem;
