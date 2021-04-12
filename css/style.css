@@ -179,6 +179,22 @@ h3 {
   background-position: 50% 50%;
   z-index: 100; }
 
+.construction {
+  position: absolute;
+  padding: 1.2rem;
+  font-size: 2rem;
+  z-index: 20000;
+  width: 60%;
+  background-color: #b4b3b4;
+  color: black;
+  border-radius: 1rem;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -400%);
+  transition: all 0.3s ease-in; }
+  .construction.conenter {
+    transform: translate(-50%, -50%); }
+
 .header {
   position: relative;
   height: 100vh; }
@@ -473,8 +489,8 @@ h3 {
     border-radius: 5rem; }
     @media only screen and (max-width: 500px) {
       .resume_section .resume {
-        margin: 5rem;
-        padding: 5rem; } }
+        margin: 2rem;
+        padding: 2rem; } }
     .resume_section .resume_head {
       color: #6ff6a7;
       border: none;

@@ -19,6 +19,14 @@ $(document).ready(function () {
     $('html, body').animate({ scrollTop: $('.resume_header').offset().top }, 'slow');
   });
 
+  /////contruction
+  $('.construction').addClass('conenter');
+  window.setTimeout(() => {
+    $('.construction').removeClass('conenter');
+  }, 5000);
+  window.setTimeout(() => {
+    $('.construction').remove();
+  }, 7000);
   // const frontLogo = document.querySelectorAll('.header_logo path');
   // for (let i = 0; i < frontLogo.length; i++) {
   //   console.log(`Letter ${i + 1} length is ${frontLogo[i].getTotalLength()}`);
