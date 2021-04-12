@@ -471,6 +471,10 @@ h3 {
     margin: 5rem;
     padding: 5rem;
     border-radius: 5rem; }
+    @media only screen and (max-width: 500px) {
+      .resume_section .resume {
+        margin: 5rem;
+        padding: 5rem; } }
     .resume_section .resume_head {
       color: #6ff6a7;
       border: none;

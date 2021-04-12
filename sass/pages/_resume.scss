@@ -22,6 +22,11 @@
     padding: 5rem;
     border-radius: 5rem;
 
+    @media only screen and (max-width: 500px) {
+      margin: 5rem;
+      padding: 5rem;
+    }
+
     &_head {
       color: $color-green;
       border: none;
