@@ -184,7 +184,7 @@ h3 {
   padding: 1.2rem;
   font-size: 2rem;
   z-index: 20000;
-  width: 60%;
+  width: 80%;
   background-color: #b4b3b4;
   color: black;
   border-radius: 1rem;
@@ -338,7 +338,7 @@ h3 {
     font-size: 2rem;
     color: #b4b3b4;
     position: absolute;
-    bottom: 60px;
+    bottom: 80px;
     left: 50%;
     transform: translate(-50%, -50%);
     animation: scroll 2s linear infinite; }
@@ -394,6 +394,22 @@ h3 {
     font-weight: 400;
     text-decoration: none; }
   .nav_link:active, .nav_link:hover {
+    color: #6ff6a7; }
+
+.contact {
+  background-color: rgba(22, 22, 26, 0.5);
+  z-index: 10000000;
+  color: #000;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem; }
+  .contact a:not(:last-child) {
+    margin-bottom: 2rem; }
+  .contact_icon {
+    font-size: 2.5rem;
     color: #6ff6a7; }
 
 #work-particles {

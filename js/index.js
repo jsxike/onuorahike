@@ -12,6 +12,9 @@ $(document).ready(function () {
   });
 
   /// Navigation scroll
+  $('.home_section-button').on('click', function () {
+    $('html, body').animate({ scrollTop: $('.header').offset().top }, 'slow');
+  });
   $('.work_section-button').on('click', function () {
     $('html, body').animate({ scrollTop: $('.work_header').offset().top }, 'slow');
   });
@@ -23,10 +26,10 @@ $(document).ready(function () {
   $('.construction').addClass('conenter');
   window.setTimeout(() => {
     $('.construction').removeClass('conenter');
-  }, 5000);
+  }, 7000);
   window.setTimeout(() => {
     $('.construction').remove();
-  }, 7000);
+  }, 9000);
   // const frontLogo = document.querySelectorAll('.header_logo path');
   // for (let i = 0; i < frontLogo.length; i++) {
   //   console.log(`Letter ${i + 1} length is ${frontLogo[i].getTotalLength()}`);
