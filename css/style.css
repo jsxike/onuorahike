@@ -168,6 +168,14 @@ h3 {
     animation: moveInBottom 0.75s ease-out;
     animation-fill-mode: backwards; }
 
+.footer {
+  background-color: rgba(22, 22, 26, 0.5);
+  text-align: center;
+  padding: 1.5rem; }
+  .footer_text {
+    font-size: 1.5rem;
+    color: #6ff6a7; }
+
 #header-particles {
   position: absolute;
   width: 100%;
@@ -373,6 +381,7 @@ h3 {
     visibility: visible; }
   .nav_icon {
     font-size: 3.5rem;
+    color: #6ff6a7;
     position: absolute;
     bottom: 0;
     left: 50%;

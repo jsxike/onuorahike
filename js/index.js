@@ -23,13 +23,13 @@ $(document).ready(function () {
   });
 
   /////contruction
-  $('.construction').addClass('conenter');
-  window.setTimeout(() => {
-    $('.construction').removeClass('conenter');
-  }, 7000);
-  window.setTimeout(() => {
-    $('.construction').remove();
-  }, 9000);
+  // $('.construction').addClass('conenter');
+  // window.setTimeout(() => {
+  //   $('.construction').removeClass('conenter');
+  // }, 7000);
+  // window.setTimeout(() => {
+  //   $('.construction').remove();
+  // }, 9000);
   // const frontLogo = document.querySelectorAll('.header_logo path');
   // for (let i = 0; i < frontLogo.length; i++) {
   //   console.log(`Letter ${i + 1} length is ${frontLogo[i].getTotalLength()}`);

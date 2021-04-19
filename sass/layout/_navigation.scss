@@ -9,7 +9,7 @@
   border-bottom-left-radius: 2.5rem;
   border-bottom-right-radius: 2.5rem;
   transition: all 0.3s linear;
-  background-color: rgba($color: #16161a, $alpha: 0.5);
+  background-color: rgba($color-primary-light, 0.5);
   &.clicked {
     height: 18rem;
   }
@@ -30,6 +30,7 @@
 
   &_icon {
     font-size: 3.5rem;
+    color: $color-green;
     position: absolute;
     bottom: 0;
     left: 50%;
