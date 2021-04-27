@@ -10,23 +10,23 @@
   z-index: 100;
 }
 
-.construction {
-  position: absolute;
-  padding: 1.2rem;
-  font-size: 2rem;
-  z-index: 20000;
-  width: 80%;
-  background-color: $color-grey;
-  color: black;
-  border-radius: 1rem;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -400%);
-  transition: all 0.3s ease-in;
-  &.conenter {
-    transform: translate(-50%, -50%);
-  }
-}
+// .construction {
+//   position: absolute;
+//   padding: 1.2rem;
+//   font-size: 2rem;
+//   z-index: 20000;
+//   width: 80%;
+//   background-color: $color-grey;
+//   color: black;
+//   border-radius: 1rem;
+//   top: 30%;
+//   left: 50%;
+//   transform: translate(-50%, -400%);
+//   transition: all 0.3s ease-in;
+//   &.conenter {
+//     transform: translate(-50%, -50%);
+//   }
+// }
 .header {
   position: relative;
   height: 100vh;
