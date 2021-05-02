@@ -1,4 +1,24 @@
 $(document).ready(function () {
+  const getWorkExperience = () => {
+    $.getJSON('/experience.json', (data) => {
+      let createWorkExp = `<h2 class="resume_head">Work Experience</h2>`;
+      data.forEach((exp) => {
+        createWorkExp += `<h3 class="resume_company">${exp.company}</h3>`;
+        createWorkExp += `<h3 class="resume_company">${exp.date}</h3>`;
+        createWorkExp += `<ul>`;
+        exp.works.forEach((work) => {
+          createWorkExp += `<li class="resume_list">${work}</li>`;
+        });
+        createWorkExp += `</ul>`;
+      });
+      $('.workexperience').html(createWorkExp);
+    }).fail((jqXHR) => {
+      console.log(jqXHR.statusText);
+    });
+  };
+
+  getWorkExperience();
+
   ///Navigation click
   $('.nav_icon').on('click', function () {
     $('.navigation').toggleClass('clicked');
@@ -21,19 +41,6 @@ $(document).ready(function () {
   $('.resume_section-button').on('click', function () {
     $('html, body').animate({ scrollTop: $('.resume_header').offset().top }, 'slow');
   });
-
-  /////contruction
-  // $('.construction').addClass('conenter');
-  // window.setTimeout(() => {
-  //   $('.construction').removeClass('conenter');
-  // }, 7000);
-  // window.setTimeout(() => {
-  //   $('.construction').remove();
-  // }, 9000);
-  // const frontLogo = document.querySelectorAll('.header_logo path');
-  // for (let i = 0; i < frontLogo.length; i++) {
-  //   console.log(`Letter ${i + 1} length is ${frontLogo[i].getTotalLength()}`);
-  // }
 
   ////PARTICLEJS
   // header particle
