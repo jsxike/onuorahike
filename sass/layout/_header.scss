@@ -67,9 +67,10 @@
   }
 
   &_hi {
-    font-size: 3.5rem;
+    font-size: 5rem;
     margin-top: 3rem;
-    color: $color-grey;
+    // color: $color-grey;
+    color: $color-green;
     animation: bounce-in 3s ease-in-out;
     @media only screen and (max-width: 500px) {
       font-size: 4rem;
@@ -82,7 +83,7 @@
     color: $color-grey;
   }
   &_name {
-    font-size: 4rem;
+    font-size: 6rem;
     color: $color-white;
     display: inline-block;
     animation: moveInRight 3s ease-in;
@@ -94,11 +95,14 @@
     }
   }
   &_paragraph {
-    font-size: 2rem;
+    font-size: 3rem;
     color: $color-grey;
     @media only screen and (max-width: 480px) {
       margin: 3rem 0;
     }
+  }
+  &_job {
+    color: $color-white;
   }
 
   &_logo {

@@ -6,8 +6,8 @@
   transform: translateX(-50%);
   height: 5rem;
   width: 20rem;
-  border-bottom-left-radius: 2.5rem;
-  border-bottom-right-radius: 2.5rem;
+  // border-bottom-left-radius: 2.5rem;
+  // border-bottom-right-radius: 2.5rem;
   transition: all 0.3s linear;
   background-color: rgba($color-primary-light, 0.5);
   &.clicked {

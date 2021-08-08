@@ -11,6 +11,7 @@ $(document).ready(function () {
         });
         createWorkExp += `</ul>`;
       });
+      // console.log(createWorkExp);
       $('.workexperience').html(createWorkExp);
     }).fail((jqXHR) => {
       console.log(jqXHR.statusText);

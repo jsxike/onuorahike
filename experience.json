@@ -1,5 +1,18 @@
 [
   {
+    "company": "Yiponline - Frontend Developer",
+    "date": "May 2021 – Present",
+    "works": [
+      "Ensure the technical feasibility of UI/UX designs.",
+      "Developed new user-interface features.",
+      "Mockup wireframes for designs.",
+      "Collaborate with designers and backend devs to implement and improve features.",
+      "Use HTML, CSS, javaScript and web frameworks to bring user interface to life.",
+      "Ensuring web application responsiveness for both mobile and desktop.",
+      "Debugging on client-side"
+    ]
+  },
+  {
     "company": "SideHustle (Bootcamp) - Frontend Developer",
     "date": "March 2021 - April 2021",
     "works": [
@@ -11,21 +24,19 @@
     ]
   },
   {
-    "company": "Pyragle - Frontend Developer",
-    "date": "November 2019 – November 2020",
+    "company": "Pyragle - Backend Developer",
+    "date": "November 2019 – September 2020",
     "works": [
       "Collaborate with designers and backend devs to implement and improve features.",
-      "Use HTML, CSS, javaScript and web frameworks to bring user interface to life.",
-      "Ensuring web application responsiveness for both mobile and desktop.",
-      "Debugging on both client-side and server-side.",
-      "Working/building REST APIs with express.js and mongoose.",
+      "Debugging on server-side.",
+      "Working/building REST APIs with express.js, mongoose.",
       "Implementing server-side logic.",
       "Staging work done and deployment."
     ]
   },
   {
     "company": "Lagos University Teaching Hospital (ICT department) - Technical Support (intern)",
-    "date": "july 2018 – September 2018",
+    "date": "July 2018 – September 2018",
     "works": [
       "Diagnose and troubleshoot both hardware and software issues.",
       "Identifying hardware and software solutions.",
