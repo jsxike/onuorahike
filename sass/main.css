@@ -436,14 +436,6 @@ h3 {
   font-size: 5rem;
   margin-top: 3rem;
   color: #6ff6a7;
-  -webkit-animation: bounce-in 3s ease-in-out;
-          animation: bounce-in 3s ease-in-out;
-}
-
-@media only screen and (max-width: 500px) {
-  .header_hi {
-    font-size: 4rem;
-  }
 }
 
 .header_im {

@@ -48,23 +48,23 @@ $(document).ready(function () {
   particlesJS('header-particles', {
     particles: {
       number: {
-        value: 50,
+        value: 77,
         density: {
-          enable: true,
-          value_area: 800,
+          enable: false,
+          value_area: 1341.5509907748635,
         },
       },
       color: {
-        value: '#ffffff',
+        value: '#6ff6a7',
       },
       shape: {
-        type: 'circle',
+        type: 'edge',
         stroke: {
-          width: 1,
-          color: '#6ff6a7',
+          width: 0,
+          color: '#000000',
         },
         polygon: {
-          nb_sides: 4.800000000000001,
+          nb_sides: 12,
         },
         image: {
           src: 'img/github.svg',
@@ -73,7 +73,7 @@ $(document).ready(function () {
         },
       },
       opacity: {
-        value: 0.5,
+        value: 0.01603412060865523,
         random: false,
         anim: {
           enable: false,
@@ -83,7 +83,7 @@ $(document).ready(function () {
         },
       },
       size: {
-        value: 2,
+        value: 28.05971106514665,
         random: true,
         anim: {
           enable: false,
@@ -94,14 +94,14 @@ $(document).ready(function () {
       },
       line_linked: {
         enable: true,
-        distance: 160,
+        distance: 0,
         color: '#ffffff',
-        opacity: 0.19,
-        width: 0,
+        opacity: 0.4,
+        width: 1,
       },
       move: {
         enable: true,
-        speed: 2,
+        speed: 1.603412060865523,
         direction: 'none',
         random: false,
         straight: false,
@@ -109,7 +109,7 @@ $(document).ready(function () {
         bounce: false,
         attract: {
           enable: false,
-          rotateX: 600,
+          rotateX: 481.0236182596568,
           rotateY: 1200,
         },
       },
@@ -272,23 +272,23 @@ $(document).ready(function () {
   particlesJS('resume-particles', {
     particles: {
       number: {
-        value: 160,
+        value: 77,
         density: {
-          enable: true,
-          value_area: 800,
+          enable: false,
+          value_area: 1341.5509907748635,
         },
       },
       color: {
-        value: '#b4b3b4',
+        value: '#6ff6a7',
       },
       shape: {
-        type: 'circle',
+        type: 'edge',
         stroke: {
           width: 0,
           color: '#000000',
         },
         polygon: {
-          nb_sides: 5,
+          nb_sides: 12,
         },
         image: {
           src: 'img/github.svg',
@@ -297,44 +297,44 @@ $(document).ready(function () {
         },
       },
       opacity: {
-        value: 1,
-        random: true,
+        value: 0.01603412060865523,
+        random: false,
         anim: {
-          enable: true,
+          enable: false,
           speed: 1,
-          opacity_min: 0,
+          opacity_min: 0.1,
           sync: false,
         },
       },
       size: {
-        value: 1.5,
+        value: 28.05971106514665,
         random: true,
         anim: {
-          enable: true,
-          speed: 4,
-          size_min: 0.3,
+          enable: false,
+          speed: 40,
+          size_min: 0.1,
           sync: false,
         },
       },
       line_linked: {
-        enable: false,
-        distance: 112.2388442605866,
+        enable: true,
+        distance: 0,
         color: '#ffffff',
         opacity: 0.4,
         width: 1,
       },
       move: {
         enable: true,
-        speed: 0.5,
+        speed: 1.603412060865523,
         direction: 'none',
-        random: true,
+        random: false,
         straight: false,
-        out_mode: 'out',
+        out_mode: 'bounce',
         bounce: false,
         attract: {
           enable: false,
-          rotateX: 600,
-          rotateY: 600,
+          rotateX: 481.0236182596568,
+          rotateY: 1200,
         },
       },
     },
@@ -343,11 +343,11 @@ $(document).ready(function () {
       events: {
         onhover: {
           enable: true,
-          mode: 'bubble',
+          mode: 'repulse',
         },
         onclick: {
           enable: true,
-          mode: 'repulse',
+          mode: 'push',
         },
         resize: true,
       },
@@ -359,14 +359,14 @@ $(document).ready(function () {
           },
         },
         bubble: {
-          distance: 250,
-          size: 0,
+          distance: 400,
+          size: 40,
           duration: 2,
-          opacity: 0,
+          opacity: 8,
           speed: 3,
         },
         repulse: {
-          distance: 400,
+          distance: 200,
           duration: 0.4,
         },
         push: {
